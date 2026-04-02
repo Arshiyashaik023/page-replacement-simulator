@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Replacement Simulator</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Page Replacement Simulator</h1>
+
+<div class="input-box">
+<label>Number of Frames:</label>
+<input type="number" id="frames" placeholder="Enter frames">
+
+<label>Page Reference String:</label>
+<input type="text" id="pages" placeholder="Example: 7 0 1 2 0 3 0 4">
+
+<button onclick="runSimulation()">Run Simulation</button>
+</div>
+
+<div class="top-section">
+
+<div class="results">
+<h2>Results</h2>
+
+<p>FIFO Page Faults : <span id="fifoFaults">-</span></p>
+<p>LRU Page Faults : <span id="lruFaults">-</span></p>
+<p>Optimal Page Faults : <span id="optimalFaults">-</span></p>
+
+<h3 id="bestAlgo"></h3>
+</div>
+
+<div class="chart-box">
+<h2>Algorithm Comparison</h2>
+<canvas id="faultChart"></canvas>
+</div>
+
+</div>
+<div class="tables">
+
+<div>
+<h2>FIFO Frame Visualization</h2>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Page</th>
+<th>Frame1</th>
+<th>Frame2</th>
+<th>Frame3</th>
+</tr>
+</thead>
+<tbody id="fifoTable"></tbody>
+</table>
+</div>
+
+<div>
+<h2>LRU Frame Visualization</h2>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Page</th>
+<th>Frame1</th>
+<th>Frame2</th>
+<th>Frame3</th>
+</tr>
+</thead>
+<tbody id="lruTable"></tbody>
+</table>
+</div>
+
+</div>
+
+<div class="optimal-section">
+<h2>Optimal Frame Visualization</h2>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Page</th>
+<th>Frame1</th>
+<th>Frame2</th>
+<th>Frame3</th>
+</tr>
+</thead>
+<tbody id="optimalTable"></tbody>
+</table>
+</div>
+
+<script src="js/fifo.js"></script>
+<script src="js/lru.js"></script>
+<script src="js/optimal.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
