@@ -1,77 +1,108 @@
-# page-replacement-simulator
-Page Replacement Simulator implementing FIFO, LRU, and Optimal algorithms to analyze page faults and compare memory management efficiency in Operating Systems.
-->Features
-Simulates three major algorithms:
-FIFO (First In First Out)
-LRU (Least Recently Used)
-Optimal Page Replacement
+# 📘 Page Replacement Simulator
 
-📊 Displays:
-Page faults for each algorithm
-Best performing algorithm
-Step-by-step frame visualization
-Graph comparison using Chart.js
+A web-based interactive simulator to visualize and compare **Page Replacement Algorithms** in Operating Systems.
 
-🎨 Clean UI with:
-Pastel color theme
-Responsive layout
-Highlighted frames
+---
 
-Algorithms Implemented
-1️⃣ FIFO (First In First Out)
-Replaces the oldest page in memory.
+## 🚀 Features
 
-2️⃣ LRU (Least Recently Used)
-Replaces the page that was least recently accessed.
+### 🧠 Algorithms Simulated
+- FIFO (First In First Out)
+- LRU (Least Recently Used)
+- Optimal Page Replacement
 
-3️⃣ Optimal Algorithm
-Replaces the page that will not be used for the longest time in the future.
+### 📊 Displays
+- Page faults for each algorithm  
+- Best performing algorithm  
+- Step-by-step frame visualization  
+- Graph comparison using Chart.js  
 
-🖥️ Tech Stack
-HTML
-CSS
-JavaScript
-Chart.js (for graph visualization)
+### 🎨 UI Highlights
+- Pastel color theme  
+- Responsive layout  
+- Clean and structured tables  
 
-📂 Project Structure
+---
+
+## 🧠 Algorithms Explained
+
+### 1️⃣ FIFO (First In First Out)
+Replaces the **oldest page** in memory.
+
+### 2️⃣ LRU (Least Recently Used)
+Replaces the page that was **least recently used**.
+
+### 3️⃣ Optimal Algorithm
+Replaces the page that will **not be used for the longest time in the future**.
+
+---
+
+## 🖥️ Tech Stack
+
+- HTML  
+- CSS  
+- JavaScript  
+- Chart.js  
+
+---
+
+## 📂 Project Structure
 page-replacement-simulator
 │
 ├── index.html
 │
 ├── css
-│   └── style.css
+│ └── style.css
 │
 └── js
-    ├── main.js
-    ├── fifo.js
-    ├── lru.js
-    └── optimal.js
-    
-▶️ How to Run
-Download or clone the repository
-Open index.html in your browser
-Enter:
-Number of frames
-Page reference string
-Click Run Simulation
+├── main.js
+├── fifo.js
+├── lru.js
+└── optimal.js
 
-📸 Output
-The simulator shows:
+---
 
-Page faults for FIFO, LRU, and Optimal
-Comparison graph
-Frame-by-frame visualization tables
+## ▶️ How to Run
 
-🌟 Future Improvements
-Step-by-step animation of page replacement
-Dynamic frame columns
-Highlight page hits vs faults
+1. Clone or download the repository  
+2. Open `index.html` in your browser  
+3. Enter:
+   - Number of frames  
+   - Page reference string  
+4. Click **Run Simulation**  
 
-📌 Use Case
+---
+
+## 📸 Output
+
+The simulator displays:
+
+- Page faults for FIFO, LRU, and Optimal  
+- Comparison graph  
+- Frame-by-frame visualization tables  
+
+---
+
+## 🌟 Future Improvements
+
+- Step-by-step animation  
+- Dynamic frame columns  
+- Highlight page hits vs faults  
+
+---
+
+## 📌 Use Case
+
 This project helps in understanding:
-Memory management concepts
-Page replacement strategies
-Performance comparison of algorithms
 
-👩‍💻 Author
-Arshiya S
+- Memory management concepts  
+- Page replacement strategies  
+- Algorithm performance comparison  
+
+---
+
+## 👩‍💻 Author
+
+**Arshiya S**
+
+---
